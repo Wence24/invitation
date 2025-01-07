@@ -232,6 +232,16 @@ export default function Home() {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-10 z-10"
         >
+          <h1 className="text-4xl font-bold text-center mb-6 text-white uppercase tracking-wider" style={{
+            textShadow: `
+              0 0 10px #a855f7,
+              0 0 20px #a855f7,
+              0 0 30px #a855f7,
+              0 0 40px #a855f7
+            `
+          }}>
+            PICK A DATE
+          </h1>
           <Calendar
             onChange={handleDateChange}
             className="w-full max-w-7xl p-14 text-xl bg-white rounded-lg shadow-lg calendar-glow"
@@ -329,9 +339,8 @@ export default function Home() {
       >
         <h2 className="text-center text-2xl font-bold">Success!</h2>
         <p className="mt-4 text-center text-lg text-gray-700">
-        Hey, I just want to thank you for giving me the chance again to prove myself. I didn't expect na I'll fall this deeply sayo, and I'm not ashamed to express it to you.  I genuinely admire everything about you. I'm more than willing to wait and pursue you the right way, no matter how long it takes, because I believe you’re worth the risk.
+        Hey, I just want to thank you for giving me the chance again to prove myself. I didn't expect na I'll fall this deeply sayo, and I'm not ashamed to express it to you.  I genuinely admire everything about you. I'm more than willing to wait and pursue you the right way, no matter how long it takes, because I believe you're worth the risk.
         I hope I get to know you more. 
-        
         Thank you so much for making time; I truly appreciate your effort and can't wait to spend time with you!
         </p>
         <div className="mt-6 flex justify-center">
