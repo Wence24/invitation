@@ -311,7 +311,7 @@ export default function Home() {
             onChange={(e) => setMessage(e.target.value)}
             className="w-full p-3 mt-2 border rounded-lg"
             rows="4"
-            placeholder="Type your message here..."
+            placeholder="Type your message here...(Just type anything, this bit is required to make the code work)"
           ></textarea>
         </div>
 
