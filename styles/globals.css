@@ -13,6 +13,45 @@
     --foreground: #ededed;
   }
 }
+.react-calendar {
+  width: 100% !important; /* Make calendar take up full width */
+  max-width: 100% !important;
+  margin: auto; /* Center the calendar */
+}
+
+/* Increase the spacing between the individual date tiles */
+.react-calendar__tile {
+  padding: 20px !important; /* Increase padding to give more space to numbers */
+  font-size: 1.5rem; /* Increase font size for better readability */
+  width: 60px !important;  /* Increase the width of each tile */
+  height: 60px !important; /* Increase the height of each tile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Increase the calendar grid space for better layout */
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important; /* Ensures 7 columns */
+  grid-gap: 10px !important; /* Increase the gap between the tiles */
+}
+
+.react-calendar__month-view__weekdays {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important; /* Ensures 7 columns for weekdays */
+  text-align: center; /* Align weekdays to the center */
+}
+
+.calendar-glow {
+  box-shadow: 0 0 10px 3px rgba(128, 0, 255, 0.6), 0 0 15px rgba(128, 0, 255, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.calendar-glow:hover {
+  box-shadow: 0 0 20px 5px rgba(128, 0, 255, 0.8), 0 0 30px rgba(128, 0, 255, 1);
+}
+
 
 body {
   color: var(--foreground);
